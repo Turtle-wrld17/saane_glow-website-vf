@@ -217,7 +217,7 @@ header {
 }
 .gridone div { background-size: cover; background-position: center; border-radius: 8px; }
 .gf1 { background-image: url('images/huile-parfum-glow-saane.jpg'); }
-.gf2 { background-image: url('images/huile-lumineuse-duo.jpg'); }
+.gf2 { background-image: url('images/huile-scintillante-saane-vf.jpg'); }
 .gf3 { background-image: url('images/huile-lumineuse-full.jpg'); }
 
 .gridtwo {
@@ -229,7 +229,7 @@ header {
     margin-top: 10px;
 }
 .gs1, .gs2 { background-size: cover; background-position: center; border-radius: 8px; }
-.gs1 { background-image: url('images/huile-scintillante-saane-vf.jpg'); }
+.gs1 { background-image: url('images/composition-huile-saane.jpeg'); }
 .gs2 { background-image: url('images/huile-femme-elandria.jpg'); }
 
 /* ======================= STYLE DU FOOTER OPTIMISÉ ======================= */
@@ -477,3 +477,277 @@ header {
 }
 
 /* LINK */
+
+/* ================= PAGE CONTACT ================= */
+
+.contact-hero {
+    background-color: var(--beige-bg-color);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-family: 'Allura', cursive;
+    font-size: 4rem;
+    color: var(--brun-texte);
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--noir-doux);
+    opacity: 0.8;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Style du Formulaire --- */
+.contact-form h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--brun-texte);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(110, 92, 85, 0.2);
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: var(--doré-luxe);
+    box-shadow: 0 0 8px var(--rose-primary-color);
+}
+
+.submit-btn {
+    background-color: var(--brun-texte);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--doré-luxe);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Panneau d'informations --- */
+.contact-info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    background: var(--beige-bg-color);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: scale(1.02);
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: var(--doré-luxe);
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.contact-image-deco img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    height: 200px;
+    object-fit: cover;
+    filter: sepia(20%);
+}
+
+/* ================= RESPONSIVE CONTACT ================= */
+
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+    }
+    
+    .contact-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+/* ================= PAGE À PROPOS ================= */
+
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/huile-parfum-glow-saane.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-family: 'Allura', cursive;
+    font-size: 5rem;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/* --- Section Story --- */
+.story-section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 10%;
+}
+
+.story-content { flex: 1; }
+.story-image { flex: 1; }
+
+.story-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px var(--rose-primary-color);
+}
+
+.tag {
+    color: var(--doré-luxe);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.story-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 15px 0 25px;
+}
+
+.personal-note {
+    margin-top: 40px;
+    padding-left: 20px;
+    border-left: 3px solid var(--doré-luxe);
+    font-style: italic;
+}
+
+/* --- Section Valeurs --- */
+.values-section {
+    background-color: var(--beige-bg-color);
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.value-item i {
+    font-size: 2rem;
+    color: var(--doré-luxe);
+    margin-bottom: 20px;
+}
+
+.value-item h4 {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Section Rituel --- */
+.ritual-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 10%;
+}
+
+.ritual-image img {
+    width: 100%;
+    border-radius: 50% 50% 0 0; /* Forme élégante en arche */
+}
+
+.tips-list {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.tips-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tips-list i { color: var(--doré-luxe); }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .story-section, .ritual-section {
+        flex-direction: column;
+        padding: 60px 5%;
+        text-align: center;
+    }
+    
+    .about-hero h1 { font-size: 3.5rem; }
+    
+    .personal-note { border-left: none; border-top: 3px solid var(--doré-luxe); padding: 20px 0; }
+}
+
+
+
+
+.hero-image img {
+    
+    margin-bottom: -5px; /* Grignote le décalage pour une fusion totale */
+}
