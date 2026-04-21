@@ -751,3 +751,6 @@ header {
     
     margin-bottom: -5px; /* Grignote le décalage pour une fusion totale */
 }
+
+.linkwa{
+    color: var(--noir-doux);}
